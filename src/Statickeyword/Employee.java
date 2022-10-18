@@ -17,6 +17,5 @@ class Employeeimpl{
     public static void main(String[] args) {
         Employee.show();
         Employee e = new Employee();
-
     }
 }

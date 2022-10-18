@@ -1,5 +1,7 @@
 package Encapsulation;
 
+import java.util.Scanner;
+
 public class Person
 {
     private int pid;
@@ -10,7 +12,7 @@ public class Person
     public void setpid(int pid){
         this.pid = pid;
     }
-    public int getpid(int i){
+    public int getpid(){
         return pid;
     }
 
@@ -41,9 +43,12 @@ public class Person
 class Personimpl{
     public static void main(String[] args) {
         Person person = new Person();
-        person.getpid(119);
+        person.getpid();
         person.setFullname("Shubham Dilip Patil");
         person.setFirstname("Shubham");
         person.setLastname("Patil");
+
+        System.out.println("Pid: "+person.getpid());
+        System.out.println("Full Name: "+person.getFullname());
     }
 }
